@@ -72,6 +72,11 @@ namespace Elaborazioni_dati_CSV__ripasso
             }
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            groupBox2.Show();
+        }
+
         private void button11_Click(object sender, EventArgs e)
         {
             string[] split = textBox17.Text.Split();
@@ -81,12 +86,7 @@ namespace Elaborazioni_dati_CSV__ripasso
 
         private void button10_Click(object sender, EventArgs e)
         {
-            //f.Azione9(filename, delim, textBox3.Text, textBox4.Text);
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            groupBox2.Show();
+            f.Azione9(textBox3.Text);
         }
     }
 }
